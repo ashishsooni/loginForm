@@ -29,13 +29,16 @@ function FormDetails() {
 
   const onSubmit = (event) => {
     event.preventDefault();
+    fullName.fName = firstName;
+    fullName.lName = lastName;
+    
   };
   return (
     <>
       <form>
         <div className="Heading_Container">
           
-            Hello {fullName.fName} {fullName.lName}
+            Hello {firstName} {lastName}
           
         </div>
         <div className="input_container">
